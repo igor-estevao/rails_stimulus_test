@@ -1,0 +1,17 @@
+<h1>This is a Stimulus test project.</h1>
+
+<div data-controller="hello">
+  <h2>Controls which events are added on the HTML</h2>
+  <input data-hello-target="firstInput" data-action="keyup->hello#keyedup">
+  <button data-action="click->hello#clicked">Click on me please</button>
+  <h3 data-hello-target="firstOutput">This text will be replaced with the text in the input when the button is clicked</h3>
+  <h3 data-hello-target="secondOutput">This text will be replaced with the text in the input when the input has an keyup event</h3>
+  <br><hr>
+
+  <h2>Controls which events are added in the controller</h2>
+  <input data-hello-target="secondInput">
+  <button data-hello-target="button">Click Me</button>
+  <h3 data-hello-target="thirdOutput">This text will be replaced with the text in the input when the button is clicked</h3>
+  <h3 data-hello-target="fourthOutput">This text will be replaced with the text in the input when the input has an keyup event</h3>
+
+</div>
